@@ -26,15 +26,3 @@ function reverseInt(n) {
   return rev;
 }
 module.exports = reverseInt;
-
-//Solution from video
-/*function reverseInt(n) {
-  var rev = parseInt(
-    n
-      .toString()
-      .split("")
-      .reverse()
-      .join("")
-  );
-  return rev * Math.sign(n);
-}*/

@@ -33,28 +33,3 @@ function chunk(array, size) {
   return arr;
 }
 module.exports = chunk;
-
-// Solution1 from video
-/*function chunk(array, size) {
-    var chank = [];
-    for (let element of array) {
-      const lastel = chank[chank.length - 1];
-      if (!lastel || lastel.length == size) {
-        chank.push([element]);
-      } else {
-        lastel.push(element);
-      }
-    }
-    return chank;
-  }*/
-
-//Solution2 form video
-/*function chunk(array, size) {
-    var chank = [];
-    var start = 0;
-    while (start < array.length) {
-      chank.push(array.slice(start, start + size));
-      start += size;
-    }
-    return chank;
-  }*/
